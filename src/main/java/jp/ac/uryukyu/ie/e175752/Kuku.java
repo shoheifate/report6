@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Kuku {
 //九九の表を出力できるコードを有効活用して、九九の段を学べるコードを書きたい。
-       public static void main(String[] args){
+       /*public static void main(String[] args){
             System.out.println("九九の表（ひょう）");
             System.out.println("この表を参考（さんこう）にして、九九の問題（もんだい）を解（と）いてみよう！！");
 
@@ -12,35 +12,44 @@ public class Kuku {
                     System.out.print(i * j + " ");
                 }
                 System.out.println();
-            }
+            }}*/
             //掛け算の表を出力して、よりわかりやすく問題を解かせる。
+    //double rand = Math.random() * 9 + 1;
+    //double rand_2 = Math.random() * 9 + 1;
+    //int number = (int) rand;
+    //int number_2 = (int) rand_2;
+    //System.out.println(number * number_2);//答え
+    //int ns = (int) rand * (int) rand_2;
+    //System.out.println(ns);
 
+       public void SetKuku() {
+           double rand = Math.random() * 9 + 1;
+           double rand_2 = Math.random() * 9 + 1;
+           System.out.println((int) rand);
+           System.out.println((int) rand_2);
+           //どの数字でかけているのかを出力させる。
 
-            double rand = Math.random() * 9 + 1;
-            double rand_2 = Math.random() * 9 + 1;
-            System.out.println((int) rand);
-            System.out.println((int) rand_2);
-            //どの数字でかけているのかを出力させる。
+           int number = (int) rand;
+           int number_2 = (int) rand_2;
+           //System.out.println(number * number_2);//答え
+           int ns = (int) rand * (int) rand_2;
+           //System.out.println(ns);
 
-            int number = (int) rand;
-            int number_2 = (int) rand_2;
-            //System.out.println(number * number_2);//答え
-            int ns = (int) rand * (int) rand_2;
-            //System.out.println(ns);
-
-            Scanner in = new Scanner(System.in);
-            int k =0;
-            //問題は最大五回まで答えることができるようにする。
-            while(k<5){
-                int i = in.nextInt();
-                if (i == ns) {
-                    System.out.println("正解！！（せいかい）");
-                    break;
-                }else{
-                    System.out.println("まちがい！");
-                    k++;
-                }
-            }
+           Scanner in = new Scanner(System.in);
+           int k = 0;
+           //問題は最大五回まで答えることができるようにする。
+           while (k < 5) {
+               int i = in.nextInt();
+               if (i == ns) {
+                   System.out.println("正解！！（せいかい）");
+                   break;
+               } else {
+                   System.out.println("まちがい！");
+                   k++;
+               }
+           }
+       }
+            public void SetMore(){
             System.out.println("第二問！！");
 
             double rand_3 = Math.random() * 9 + 1;
@@ -55,7 +64,7 @@ public class Kuku {
             int nj = (int) rand_3 * (int) rand_4;
             //System.out.println(ns);
 
-            Scanner out = new Scanner(System.in);
+            Scanner in = new Scanner(System.in);
             int j =0;
             //問題は最大五回まで答えることができるようにする。
             while(j<5){
@@ -68,7 +77,8 @@ public class Kuku {
                     j++;
                 }
             }
-        }
-    }
+       }
+}
+
 
 
