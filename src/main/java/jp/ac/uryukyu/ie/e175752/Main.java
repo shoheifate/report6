@@ -16,5 +16,6 @@ public class Main {
         System.out.println("数字（すうじ）を入力（にゅうりょく）してね！！()");
         kuku.SetKuku();
         kuku.SetMore();
+        kuku.SetTake();
     }
 }
